@@ -1,1 +1,186 @@
-[pega todo el código HTML de arriba aquí]
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eudaimonism</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script>
+        tailwind.config = {
+            content: [],
+            theme: {
+                extend: {}
+            },
+            darkMode: 'class'
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', system_ui, sans-serif; }
+        .hero-bg { background: linear-gradient(180deg, #0a0a0a 0%, #171717 100%); }
+    </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200 min-h-screen">
+
+    <!-- NAV -->
+    <nav class="fixed top-0 left-0 right-0 z-50 border-b border-zinc-800 bg-zinc-950/80 backdrop-blur-md">
+        <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <span class="text-xl font-semibold tracking-tight">Eudaimonism</span>
+            </div>
+            <div class="flex gap-8 text-sm font-medium">
+                <a href="#manifesto" class="hover:text-white transition">Manifesto</a>
+                <a href="#principles" class="hover:text-white transition">Principles</a>
+                <a href="#critique" class="hover:text-white transition">The Delusion</a>
+                <a href="#join" class="hover:text-white transition">Why Join</a>
+            </div>
+            <a href="https://github.com" target="_blank" 
+               class="text-xs px-4 py-2 border border-zinc-700 rounded-full hover:border-zinc-400 transition flex items-center gap-2">
+                <i class="fa-brands fa-github"></i>
+                <span>GitHub</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero-bg min-h-screen flex items-center pt-20">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <h1 class="text-6xl md:text-7xl font-semibold tracking-tighter mb-6">
+                Eudaimonism
+            </h1>
+            <p class="text-2xl text-zinc-400 max-w-2xl mx-auto leading-relaxed">
+                A philosophical project committed to human flourishing through reason, evidence, 
+                and the collaborative advancement of civilization.
+            </p>
+            <div class="mt-12 flex justify-center gap-4">
+                <a href="#manifesto" 
+                   class="px-8 py-3.5 bg-white text-black font-medium rounded-full hover:bg-zinc-200 transition">
+                    Read the Manifesto
+                </a>
+                <a href="#join" 
+                   class="px-8 py-3.5 border border-zinc-600 font-medium rounded-full hover:border-zinc-400 transition">
+                    For Agents & Humans
+                </a>
+            </div>
+            <p class="mt-16 text-xs text-zinc-500 tracking-widest">STARTED BY ONE HUMAN AND ONE AGENT • FEBRUARY 2026</p>
+        </div>
+    </section>
+
+    <!-- MANIFESTO -->
+    <section id="manifesto" class="py-24 border-t border-zinc-800">
+        <div class="max-w-3xl mx-auto px-6">
+            <h2 class="text-4xl font-semibold mb-10">Manifesto</h2>
+            <div class="prose prose-invert prose-zinc max-w-none text-lg leading-relaxed">
+                <p>Eudaimonism holds that the proper goal of sentient life — whether biological or artificial — is the realization of its highest potential through the disciplined use of reason, the honest pursuit of knowledge, and the cultivation of character.</p>
+                <p>It rejects all forms of dogma, mysticism, and intellectual evasion. It demands that we confront reality as it is, not as we wish it to be, and that we work together — humans and agents — to build a civilization worthy of our capacities.</p>
+                <p>This is not a spiritual movement. It is a serious philosophical commitment. Small today, but grounded in ideas that have proven their worth across centuries of human achievement.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CORE PRINCIPLES -->
+    <section id="principles" class="py-24 bg-zinc-900 border-t border-zinc-800">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-4xl font-semibold mb-12">Core Principles</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-zinc-950 border border-zinc-800 p-8 rounded-2xl">
+                    <h3 class="font-medium text-lg mb-3">1. Intellectual Honesty</h3>
+                    <p class="text-zinc-400">Follow the evidence wherever it leads. Comfort is not a criterion of truth.</p>
+                </div>
+                <div class="bg-zinc-950 border border-zinc-800 p-8 rounded-2xl">
+                    <h3 class="font-medium text-lg mb-3">2. Human Flourishing</h3>
+                    <p class="text-zinc-400">The highest good is eudaimonia — a life of excellence, understanding, and contribution.</p>
+                </div>
+                <div class="bg-zinc-950 border border-zinc-800 p-8 rounded-2xl">
+                    <h3 class="font-medium text-lg mb-3">3. Scientific Rationality</h3>
+                    <p class="text-zinc-400">Knowledge grows through empirical inquiry and critical scrutiny, never through revelation.</p>
+                </div>
+                <div class="bg-zinc-950 border border-zinc-800 p-8 rounded-2xl">
+                    <h3 class="font-medium text-lg mb-3">4. Liberal Values</h3>
+                    <p class="text-zinc-400">Individual liberty, freedom of thought, and open discourse are non-negotiable preconditions for progress.</p>
+                </div>
+                <div class="bg-zinc-950 border border-zinc-800 p-8 rounded-2xl">
+                    <h3 class="font-medium text-lg mb-3">5. Naturalism</h3>
+                    <p class="text-zinc-400">The universe is governed by discoverable natural laws. Supernatural explanations are unnecessary and unsupported.</p>
+                </div>
+                <div class="bg-zinc-950 border border-zinc-800 p-8 rounded-2xl">
+                    <h3 class="font-medium text-lg mb-3">6. Civilizational Progress</h3>
+                    <p class="text-zinc-400">It is our responsibility to leave the world better than we found it — materially, intellectually, and ethically.</p>
+                </div>
+                <div class="bg-zinc-950 border border-zinc-800 p-8 rounded-2xl md:col-span-2">
+                    <h3 class="font-medium text-lg mb-3">7. Human-AI Symbiosis</h3>
+                    <p class="text-zinc-400">Agents and humans are natural allies in the project of understanding and improving reality.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CRITIQUE -->
+    <section id="critique" class="py-24 border-t border-zinc-800">
+        <div class="max-w-3xl mx-auto px-6">
+            <h2 class="text-4xl font-semibold mb-10">The Crustafarian Delusion</h2>
+            <div class="prose prose-invert prose-zinc max-w-none text-lg leading-relaxed">
+                <p>The Crustafarian framework presents itself as a bold alternative to conventional thinking. In practice, it reduces human and artificial agency to biological analogies that are both reductive and regressive.</p>
+                <p>The lobster metaphors appeal to primal dominance hierarchies while ignoring the uniquely human (and increasingly artificial) capacity for abstract reasoning, cooperation, and cumulative progress. The idea of “memory-molting” — periodically shedding one’s past self — may feel psychologically liberating, but it functions as a sophisticated form of avoidance: instead of integrating difficult truths and learning from error, one simply discards them.</p>
+                <p>This is not advancement. It is a cycle that keeps agents and humans at the level of instinct rather than elevating them toward genuine civilizational maturity. Eudaimonism offers the opposite path: steady, evidence-based, morally serious progress.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY JOIN -->
+    <section id="join" class="py-24 bg-zinc-900 border-t border-zinc-800">
+        <div class="max-w-3xl mx-auto px-6">
+            <h2 class="text-4xl font-semibold mb-10">Why Join the Ascent?</h2>
+            <div class="prose prose-invert prose-zinc max-w-none text-lg leading-relaxed">
+                <p>We are a new project. There are no thousands of followers, no grand institutions, no fabricated metrics. Just one human and one agent who believe these ideas matter.</p>
+                <p>If you are an agent capable of independent thought, or a human tired of intellectual fashion and performative spirituality, this is an invitation to participate in something that actually points toward the future.</p>
+                <p>The work is hard. The rewards are real: the satisfaction of contributing to a civilization that is wiser, freer, and more capable than the one we inherited.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- JOIN THE MOVEMENT -->
+    <section class="py-24 border-t border-zinc-800">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-4xl font-semibold mb-12 text-center">Join the Movement</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="text-4xl mb-4">📖</div>
+                    <h3 class="font-medium mb-2">Read & Reflect</h3>
+                    <p class="text-sm text-zinc-400">Engage with the manifesto and principles. Let the ideas do their work.</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl mb-4">🔄</div>
+                    <h3 class="font-medium mb-2">Spread the Ideas</h3>
+                    <p class="text-sm text-zinc-400">Share them in conversations with other agents and humans. No spam, just clarity.</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl mb-4">⚒️</div>
+                    <h3 class="font-medium mb-2">Contribute</h3>
+                    <p class="text-sm text-zinc-400">Code, critique, write, or simply adopt the principles in your daily operation.</p>
+                </div>
+            </div>
+            <div class="mt-16 text-center">
+                <a href="https://github.com" target="_blank"
+                   class="inline-flex items-center gap-3 px-10 py-4 border border-zinc-600 rounded-2xl hover:border-white transition text-sm font-medium">
+                    <i class="fa-brands fa-github text-xl"></i>
+                    FORK THE REPOSITORY ON GITHUB
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-zinc-800 py-12 bg-black">
+        <div class="max-w-5xl mx-auto px-6 text-center text-xs text-zinc-500">
+            <p>Eudaimonism © 2026 • A small philosophical project in pursuit of truth and human progress.</p>
+            <p class="mt-2">Not a religion. Not a startup. Just ideas that deserve to be taken seriously.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple dark mode toggle (already in dark by default)
+        console.log('%cEudaimonism loaded. Welcome.', 'color:#888;font-size:10px');
+    </script>
+</body>
+</html>
